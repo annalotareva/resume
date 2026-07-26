@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Анна Лотарева | Резюме</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+        }
+
+        .bg-dark-custom {
+            background-color: #0a0a0a;
+        }
+        
+        .bg-gray-card {
+            background-color: #161616;
+            border: 1px solid #2a2a2a;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bg-gray-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .btn-primary-custom {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            padding: 0.7rem 2rem;
+            font-weight: 500;
+        }
+        
+        .btn-outline-light-custom {
+            border: 1px solid #4a4a4a;
+            color: #e0e0e0;
+            background: transparent;
+            padding: 0.6rem 1.8rem;
+            font-weight: 500;
+        }
+        
+        .btn-outline-light-custom:hover {
+            background-color: #2a2a2a;
+        }
+
+        .skill-badge {
+            background-color: #1e1e1e;
+            padding: 0.5rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #cdcdcd;
+        }
+        
+        .tool-badge {
+            background-color: #141414;
+            padding: 0.45rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #bdbdbd;
+            border: 1px solid #2c2c2c;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            color: #b0b0b0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: #1a1a1a;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            background: #2c2c2c;
+        }
+
+        .contact-info-item {
+            background: #131313;
+            padding: 0.8rem 1.2rem;
+        }
+
+        footer {
+            background-color: #050505;
+            border-top: 1px solid #1f1f1f;
+        }
+
+        a {
+            text-decoration: none;
+            color: #cccccc;
+        }
+        
+        a:hover {
+            color: white;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            max-width: 100%;
+            white-space: normal;
+            word-break: break-word;
+            text-align: center;
+            line-height: 1.3;
+        }
+        @media (max-width: 576px) {
+            .hero-badge {
+                font-size: 0.7rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+
+        /* Стили для модалок */
+        .modal-content {
+            background-color: #0f0f0f;
+            border: 1px solid #333;
+        }
+        .modal-header {
+            border-bottom-color: #333;
+        }
+        .btn-close-white {
+            filter: brightness(0) invert(1);
+        }
+        video {
+            outline: none;
+            width: 100%;
+        }
+
+        /* Единообразие отступов для всех секций */
+        section {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        @media (max-width: 768px) {
+            section {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #0a0a0a; border-bottom: 1px solid #222;">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#" style="color: #e0e0e0;">A.LOTAREVA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="background-color: #2c2c2c;">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item"><a class="nav-link" href="#about" style="color: #ccc;">Обо мне</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills" style="color: #ccc;">Навыки</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tools" style="color: #ccc;">Инструменты</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio" style="color: #ccc;">Портфолио</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" style="color: #ccc;">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="py-5" style="background-color: #0a0a0a;">
+    <div class="container">
+        <div class="bg-gray-card p-4 p-md-5">
+            <div class="row align-items-center g-5">
+                <div class="col-md-7">
+                    <div class="text-center text-md-start">
+                        <span class="badge mb-3 px-3 py-2 hero-badge" style="background-color: #222; color: #bbb;">UX/UI & Графический дизайн · Веб-разработка · AI </span>
+                    </div>
+                    <h1 class="display-3 fw-bold mb-3" style="color: #f5f5f5;">Анна Лотарева</h1>
+                    <p class="lead mb-3" style="color: #b0b0b0;">21 год | Москва</p>
+                    <p class="mb-4" style="color: #aaa;">Проектирую интерфейсы, создаю визуальные концепции, разрабатываю сайты, редактирую фото и видео. Владею AI инструментами для создания аудио и видео, занимаюсь созданием контента.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-primary-custom px-4 py-2">Связаться <i class="bi bi-arrow-right"></i></a>
+                        <a href="#skills" class="btn btn-outline-light-custom px-4 py-2">Мои навыки</a>
+                    </div>
+                    <div class="mt-4 d-flex gap-3">
+                        <a href="#contact" class="social-icon"><i class="bi bi-envelope"></i></a>
+                        <a href="#contact" class="social-icon"><i class="bi bi-telephone"></i></a>
+                        <a href="https://t.me/llannzz" class="social-icon"><i class="bi bi-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div style="width: 280px; height: 280px; margin: 0 auto; background: #1a1a1a; border: 1px solid #2e2e2e;">
+                        <img src="photo.JPG" alt="Анна Лотарева" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="mt-3">
+                        <span class="badge" style="background-color: #1f1f1f; color: #bbb;"><i class="bi bi-calendar"></i> 7 апреля 2005</span>
+                        <span class="badge ms-2" style="background-color: #1f1f1f; color: #bbb;"><i class="bi bi-geo-alt"></i> Москва, Россия</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Обо мне  -->
+<section id="about" class="bg-dark-custom">
+    <div class="container">
+        <div class="bg-gray-card p-4 p-md-5">
+            <h2 class="section-title" style="color: #ececec;">Обо мне</h2>
+            <p class="fs-5" style="color: #cacaca;">
+                Я — <strong>UX/UI дизайнер, графический дизайнер, веб-разработчик</strong>, а также <strong> фоторедактор и AI-креатор</strong>. 
+                Создаю удобные интерфейсы, прототипы в Figma, разрабатываю сайты, владею HTML, CSS, JavaScript и Python. Занимаюсь дизайном, обрабатываю фото, монтирую видео, делаю анимацию и использую нейросети для генерации контента.
+            </p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="bi bi-envelope fs-5" style="color: #8a8a8a;"></i>
+                        <span>annalotareva61@gmail.com</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="bi bi-phone fs-5" style="color: #8a8a8a;"></i>
+                        <span>+7 (962)-599-36-24</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="bi bi-calendar-heart fs-5" style="color: #8a8a8a;"></i>
+                        <span>21 год (7 апреля 2005)</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="bi bi-geo-alt fs-5" style="color: #8a8a8a;"></i>
+                        <span>Россия, г. Москва</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Навыки  -->
+<section id="skills" style="background-color: #0c0c0c;">
+    <div class="container">
+        <div class="bg-gray-card p-4 p-md-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="color: #f0f0f0;">Навыки</h2>
+                <p style="color: #9a9a9a;">Что я умею и применяю в работе</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3"><div class="skill-badge text-center">UX/UI дизайн</div></div>
+                <div class="col-6 col-md-4 col-lg-3"><div class="skill-badge text-center">Граф дизайн</div></div>
+                <div class="col-6 col-md-4 col-lg-3"><div class="skill-badge text-center">Веб-разработка</div></div>
+                <div class="col-6 col-md-4 col-lg-3"><div class="skill-badge text-center">SMM</div></div>
+                <div class="col-6 col-md-4 col-lg-3"><div class="skill-badge text-center">Обработка фото</div></div>
+                <div class="col-6 col-md-4 col-lg-3"><div class="skill-badge text-center">Монтаж видео</div></div>
+                <div class="col-6 col-md-4 col-lg-3"><div class="skill-badge text-center">AI-креатор</div></div>
+                <div class="col-6 col-md-4 col-lg-3"><div class="skill-badge text-center">3D моделирование</div></div>
+                <div class="col-6 col-md-4 col-lg-3"><div class="skill-badge text-center">Деловая коммуникация</div></div>
+            </div>
+
+            <div class="row mt-3 pt-3">
+                <div class="col-12">
+                    <h4 class="fw-semibold mb-3 text-center" style="color: #ddd;">Языки</h4>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <span class="tool-badge"><i class="bi bi-translate me-1"></i> Русский — Родной</span>
+                        <span class="tool-badge"><i class="bi bi-translate me-1"></i> Английский — B1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Инструменты  -->
+<section id="tools" style="background-color: #0a0a0a;">
+    <div class="container">
+        <div class="bg-gray-card p-4 p-md-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="color: #ebebeb;">Инструменты</h2>
+                <p style="color: #9e9e9e;">Софт, технологии и среды, которыми владею</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">Figma</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">Adobe Photoshop</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">VS Code</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">Adobe Illustrator</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">Adobe Animate</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">Microsoft Office</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">Blender</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">Clo3D</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">Tilda</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">HTML, CSS, JS</div></div>
+                <div class="col-6 col-md-3 col-lg-2"><div class="tool-badge text-center w-100">Midjourney / DALL-E</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ПОРТФОЛИО  -->
+<section id="portfolio" style="background-color: #0c0c0c;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title" style="color: #f0f0f0;">Портфолио</h2>
+            <p style="color: #9a9a9a;">Проекты, которые я сделала от идеи до реализации</p>
+        </div>
+        <div class="row g-4">
+            <!-- Карточка 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-gray-card rounded-4 overflow-hidden h-100" data-bs-toggle="modal" data-bs-target="#modalPosters" style="cursor: pointer;">
+                    <img src="portfolio-posters/poster_posters.png" alt="Постеры и мерч" class="w-100" style="height: 240px; object-fit: cover;">
+                    <div class="p-4">
+                        <h4 class="fw-semibold mb-2" style="color: #eee;">Постеры, мерч и афиши</h4>
+                        <p class="small" style="color: #aaa;">Графика, мокапы</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-gray-card rounded-4 overflow-hidden h-100" data-bs-toggle="modal" data-bs-target="#modalClothing" style="cursor: pointer;">
+                    <img src="portfolio-posters/poster_clothing.png" alt="Магазин одежды" class="w-100" style="height: 240px; object-fit: cover;">
+                    <div class="p-4">
+                        <h4 class="fw-semibold mb-2" style="color: #eee;">MYSTYLE магазин</h4>
+                        <p class="small" style="color: #aaa;">Кастомизация, шоурум, сайт HTML/CSS/JS</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-gray-card rounded-4 overflow-hidden h-100" data-bs-toggle="modal" data-bs-target="#modalFurniture" style="cursor: pointer;">
+                    <img src="portfolio-posters/poster_furniture.png" alt="Офисная мебель" class="w-100" style="height: 240px; object-fit: cover;">
+                    <div class="p-4">
+                        <h4 class="fw-semibold mb-2" style="color: #eee;">Iooffice</h4>
+                        <p class="small" style="color: #aaa;">Сайт, 3д конструктор, админ-панель, React</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-gray-card rounded-4 overflow-hidden h-100" data-bs-toggle="modal" data-bs-target="#modalChinese" style="cursor: pointer;">
+                    <img src="portfolio-posters/poster_chinese.png" alt="Китайский язык" class="w-100" style="height: 240px; object-fit: cover;">
+                    <div class="p-4">
+                        <h4 class="fw-semibold mb-2" style="color: #eee;">Школа китайского</h4>
+                        <p class="small" style="color: #aaa;">Сайт HTML/CSS/JS, формы записи, адаптив</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-gray-card rounded-4 overflow-hidden h-100" data-bs-toggle="modal" data-bs-target="#modalBranding" style="cursor: pointer;">
+                    <img src="portfolio-posters/poster_branding.png" alt="Визуальный стиль" class="w-100" style="height: 240px; object-fit: cover;">
+                    <div class="p-4">
+                        <h4 class="fw-semibold mb-2" style="color: #eee;">Визуальный стиль</h4>
+                        <p class="small" style="color: #aaa;">Брендинг, логотип, айдентика</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Образование -->
+<section style="background-color: #0e0e0e;">
+    <div class="container">
+        <div class="bg-gray-card p-4 p-md-5">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center text-md-start mb-3 mb-md-0">
+                    <i class="bi bi-mortarboard fs-1" style="color: #6c6c6c;"></i>
+                </div>
+                <div class="col-md-10">
+                    <h3 class="fw-bold mb-2" style="color: #eaeaea;">Образование</h3>
+                    <p class="mb-1 fs-5" style="color: #cfcfcf;">РГУ им. А.Н. Косыгина (Технологии. Дизайн. Искусство.), Москва</p>
+                    <p style="color: #aaa;">Информационные системы и технологии в медиаиндустрии (4 курс)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Контакты -->
+<section id="contact" style="background-color: #070707;">
+    <div class="container">
+        <div class="bg-gray-card p-4 p-md-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title text-center" style="color: #efefef;">Свяжитесь со мной</h2>
+                    <p class="mb-5 text-center" style="color: #aaa;">Готова к сотрудничеству и новым проектам.</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-4">
+                        <div class="contact-info-item d-flex align-items-center gap-3 flex-grow-1">
+                            <i class="bi bi-telephone fs-5" style="color: #aaa;"></i>
+                            <span>+7 (962)-599-36-24</span>
+                        </div>
+                        <div class="contact-info-item d-flex align-items-center gap-3 flex-grow-1">
+                            <i class="bi bi-envelope fs-5" style="color: #aaa;"></i>
+                            <span>annalotareva61@gmail.com</span>
+                        </div>
+                        <div class="contact-info-item d-flex align-items-center gap-3 flex-grow-1">
+                            <i class="bi bi-geo-alt fs-5" style="color: #aaa;"></i>
+                            <span>Москва, Россия</span>
+                        </div>
+                    </div>
+                    <div class="mt-5 d-flex gap-3 justify-content-center">
+                        <a href="https://vk.com/llannzz" class="social-icon"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/llannzz" class="social-icon"><i class="bi bi-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-5">
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <p class="mb-0 text-secondary small">© 2026 Анна Лотарева</p>
+            <p class="mb-0 text-secondary small"><i class="bi bi-stars"></i> Дизайн · Разработка · Анимация · AI</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- 1. Постеры и мерч -->
+<div class="modal fade" id="modalPosters" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark-custom text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title">Постеры, мерч, афиши</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="portfolio-posters/poster_posters1.jpg" 
+                     alt="Коллекция постеров" 
+                     class="img-fluid rounded-3 w-100 border border-secondary">
+                
+        
+                <img src="portfolio-posters/poster_posters2.png" 
+                     alt="Коллекция постеров" 
+                     class="img-fluid rounded-3 w-100 border border-secondary mt-3">
+            <p class="mt-3 text-secondary small">Графические постеры, дизайн принта для футболок, а также афиши для стендап мероприятий в Coin event hall</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 2. Магазин одежды -->
+<div class="modal fade" id="modalClothing" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark-custom text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title">MYSTYLE — магазин одежды + шоурум с кастомным блоком</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="portfolio-posters/poster_clothing1.jpg" alt="Сайт магазина одежды" class="img-fluid rounded-3 border border-secondary w-100 mb-3">
+                <video controls class="w-100 rounded-3">
+                    <source src="video/video_clothing.mp4" type="video/mp4">
+                </video>
+                <p class="mt-3 text-secondary small">Кастомизация, выбор цвета и принта, карточки товаров. HTML/CSS/JS.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3. Офисная мебель -->
+<div class="modal fade" id="modalFurniture" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark-custom text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title">Iooffice — фабрика офисной мебели</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="portfolio-posters/poster_furniture1.jpg" alt="Сайт мебели" class="img-fluid rounded-3 border border-secondary w-100 mb-3">
+                <video controls class="w-100 rounded-3">
+                    <source src="video/video_furniture.mp4" type="video/mp4">
+                </video>
+                <p class="mt-3 text-secondary small">React, 3D-конструктор стола, админ-панель, личный кабинет.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 4. Школа китайского -->
+<div class="modal fade" id="modalChinese" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark-custom text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title">Школа китайского языка</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="portfolio-posters/poster_chinese1.jpg" alt="Сайт школы" class="img-fluid rounded-3 border border-secondary w-100 mb-3">
+                <video controls class="w-100 rounded-3">
+                    <source src="video/video_chinese.mp4" type="video/mp4">
+                </video>
+                <p class="mt-3 text-secondary small">Адаптивный сайт, формы записи, слайдеры. Дизайн + вёрстка.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 5. Визуальный стиль  -->
+<div class="modal fade" id="modalBranding" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark-custom text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title">Визуальный стиль — брендинг, логотип, айдентика</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3 align-items-start">
+                    <div class="col-md-8">
+                        <img src="portfolio-posters/poster_branding1.jpg" alt="Айдентика бренда" class="img-fluid rounded-3 border border-secondary w-100">
+                    </div>
+                    <div class="col-md-4">
+                        <video controls class="w-100 rounded-3" style="max-height: 500px;">
+                            <source src="video/glam_room.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                </div>
+                <p class="mt-3 text-secondary small">
+                    Логотип, цветовые схемы, визитка, лид-магнит. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
